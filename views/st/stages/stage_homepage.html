@@ -1,0 +1,47 @@
+<section class="top-banner container banner">
+	<div class="keyvisual">
+		<picture>
+		  <source srcset="/images/s1.jpg" media="(min-width: 1280px)">
+		  <source srcset="/images/s1.jpg" media="(min-width: 1024px)">
+		  <source srcset="/images/s1.jpg" media="(min-width: 660px)">
+		  <source srcset="/images/s1-test.jpg" media="(max-width: 659px)">
+		  <img src="/images/pl1_xs.jpg" alt="CMS TEXT">
+		</picture>
+	</div>
+
+	<div class="container">
+		<div class="block">
+			<div class="row">
+				<div class="col-md-7 col-sm-9">
+	        <div class="content">
+            <h2 class="hl-2">Willkommen bei der</h2>
+            <h1 class="hl-2">Nürnberger Versicherung.</h1>
+            <h3 class="sl-1">Wie können wir Ihnen helfen?</h3>
+            <form id="form-banner" class="hidden-xs">
+              {% include "inc/dropdown_products.html" %}
+            </form>
+	        </div>
+				</div>
+				<div class="col-md-5 hidden-xs col-sm-3">
+	        <img class="trust" src="/images/trust.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="button-products-xs hidden-lg hidden-md hidden-sm bg-light-blue">
+	<div class="container">
+		<div class="block">
+			{% include "inc/dropdown_products.html" %}
+		</div>
+	</div>
+</section>
+
+<section class="content-up">	
+	<div class="container bg-alice-blue">
+		<div class="block">
+			{% include "inc/section_bboxesf.html" %}
+		</div>
+	</div>
+</section>

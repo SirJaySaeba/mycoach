@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+  {% include "inc/head.html" %}
+  <body>
+
+    <header>
+            {% include "inc/header.html" %}
+    </header>
+
+    <div id="main-content">
+    	<div class="overlay"></div>
+        {% include content+".html" %}
+        
+    </div>
+
+    <footer>
+		{% include "inc/footer.html" %}
+    </footer>
+    <script src="/javascripts/all.min.js"></script>
+  </body>
+</html>
